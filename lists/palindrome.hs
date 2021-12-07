@@ -1,4 +1,7 @@
 -- Check if given array of unknown type is a palindrome.
+-- 
+-- isPalindrome [1, 2, 3, 2, 1]
+-- True
 
 isPalindrome :: (Eq a) => [a] -> Bool
 isPalindrome (x:xs) = ((x:xs) == (reverseList (x:xs)))
